@@ -1,0 +1,11 @@
+title: FC Ports
+agents: snmp
+description:
+ This check fetches information about FC Ports from the ADIC-TAPE-LIBRARY-MIB.
+ It was written specifically for IBM TS3500 Tape Library, but might work for others as well.
+
+ The check result is always {OK}. Additional information on port type, negotiated speed and WWPN is shown.
+
+
+inventory:
+ One service will be created for each port.

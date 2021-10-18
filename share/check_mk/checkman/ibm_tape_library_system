@@ -1,0 +1,23 @@
+title: System status
+agents: snmp
+description:
+ This check fetches information about subsystem status from the ADIC-TAPE-LIBRARY-MIB.
+ It was written specifically for IBM TS3500 Tape Library, but might work for others as well.
+
+ The library returns status values for different subsystems.
+ Based on this result, the check will go {WARN} or {CRIT}.
+
+
+
+
+ {Possible operating status results:}
+
+ {CRIT}: failed, invalid
+
+ {WARN}: degraded, warning
+
+ {OK}: good, informational
+
+
+inventory:
+ One service will be created for each subsystem.

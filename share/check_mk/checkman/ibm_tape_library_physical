@@ -1,0 +1,22 @@
+title: Online status
+agents: snmp
+description:
+ This check fetches information about the physical library status from the ADIC-TAPE-LIBRARY-MIB.
+ It was written specifically for IBM TS3500 Tape Library, but might work for others as well.
+
+ The library returns an online status. Based on this result, the check will go {WARN} or {CRIT}.
+
+
+
+
+ {Possible operating status results:}
+
+ {CRIT}: offline
+
+ {WARN}: online pending, offline pending, shutdown pending
+
+ {OK}: online
+
+
+inventory:
+ One service will be created.

@@ -1,0 +1,10 @@
+title: Cleaning Cartridges
+agents: snmp
+description:
+ This check fetches information about cleaning cartridges from the SNIA-SML-MIB.
+ (Storage Networking Industry Association-Storage Media Library)
+ It was written specifically for IBM TS3500 Tape Library, but might work for others as well.
+
+ This checks returns the total number of cleaning cartridges found by the system.
+ If there are not enough cleaning cartridges, the check will become {WARN} or {CRIT}.
+ The parameters for {WARN} or {CRIT} can be configured via WATO.
